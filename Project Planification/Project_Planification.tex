@@ -1,0 +1,95 @@
+% ------------------------------------------------------------------------------------- %
+% ODIS Diamond - IDE for D Programming Language                                         %
+%                                                                                       %
+% This document is a personal essay on IDE specification for D programming language.    %
+%                                                                                       %
+% Rizo Isrof   <rizo@odis-project.org>                                                  %
+% Rui Malheiro  <rui@odis-project.org>                                                  %
+% ------------------------------------------------------------------------------------- %
+
+\documentclass[12pt]{article}
+\usepackage{fix-cm}
+
+% Project Information ----------------------------------------------------------------- %
+
+% Organization Name
+\newcommand{\ProjectOrganization}{ODIS} % Course/class
+
+% Project Name
+\newcommand{\ProjectName}{Diamond}
+
+% Publication Title
+\newcommand{\PublicationTitle}{Project Planification}
+
+% Project Authors
+\newcommand{\PublicationAuthors}{Rizo Isrof, Rui Malheiro}
+
+% Contacts
+\newcommand{\Contacts}{\{rizo,rui\}@odis-project.org}
+
+% Project Start Date
+\newcommand{\ProjectStartDate}{April,\ 2012}
+
+
+% Title Page -------------------------------------------------------------------------- %
+
+\title{
+	\ProjectOrganization\ --\ \ProjectName \\
+	\vspace{10pt}
+	\Huge{\textbf{\PublicationTitle}} \\
+	\vspace{20pt}
+}
+
+\author{
+	\Large{\PublicationAuthors}
+	\vspace{5pt} \\
+	\texttt{\Contacts}
+	\vspace{20pt}
+}
+
+\date{\textit{\today}}
+
+\begin{document}
+\maketitle
+
+% Remove page numbering on the  page.
+\thispagestyle{empty}
+
+\clearpage
+
+
+% Document Content -------------------------------------------------------------------- %
+
+\section{General Tasks}
+
+\begin{itemize}
+	\item Create a D/Objective-C compiler.
+  	\item Finish the existing DMD Fork by Michel Fortin.
+  	\item Extend the LDC.
+	\item D-Cocoa Communication
+  	\item Communicate with the OS X WindowServer
+  	\item Allow the creation of the Cocoa applications in D.
+	\item D IDE
+	\item D GUI Framework
+	\item Declarative language of interfaces with D backend.
+	\item Javascript compiler to allow deployment of the application for the Web.
+\end{itemize}
+
+\section{Graphical Interface Framework}
+In order to provide the native drawing capabilities for the D programming language, the communication with the window system in each platform should be possible. Thus, for the OS X the language must interact with the Cocoa framework, in Linux and BSD systems, the X11 is used and for the Windows - win32 API.
+
+\subsection{GUI Backend for Cocoa}
+
+\begin{itemize}
+	\item Make a functional prototype of the D-Cocoa bridge.
+	\item Create a minimal text editor with D syntax checking and highlighting.
+	\item Make a study of the possible graphical elements that may be integrated into the source code view.
+\end{itemize}
+
+
+
+
+
+
+
+\end{document}
